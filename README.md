@@ -12,7 +12,7 @@
 
 ### Which programming languages do you use here?
 
-**C, C++, Python and ~~BRAINFUCK~~.**
+**C, C++, Python**
 
 *As soon as I will learn new language basics, I will add new language solutions.*
 
