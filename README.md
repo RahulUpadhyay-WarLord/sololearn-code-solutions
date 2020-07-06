@@ -6,7 +6,7 @@
 
 
 
-##### This is archive with all Sololearn problems solutions, including community puzzles, sorted by languages and difficulty.
+** This is archive with all Sololearn problems solutions, including community puzzles, sorted by languages and difficulty.**
 
 *All solutions passed official Sololearn tests.*
 
