@@ -6,13 +6,15 @@
 
 
 
-**This is archive with all Sololearn problems solutions, including community puzzles, sorted by languages and difficulty.**
+This is archive with all Sololearn problems solutions, including community puzzles, sorted by languages and difficulty.
+
 
 *All solutions passed official Sololearn tests.*
 
-**This repository is not completed yet, so it is normal if you will not find some tasks here. I will**
 
-**add missing codes soon.**
+This repository is not completed yet, so it is normal if you will not find some tasks here. I will
+
+add missing codes soon.
 
 
 
@@ -23,7 +25,7 @@
 
 
 
-**C, C++, Python**
+C, C++, and Python
 
 *As soon as I will learn new language basics, I will add new language solutions.*
 
@@ -37,7 +39,7 @@
 
 
 
-**Yes, for sure.  But only thing you need to do is mention me as a code creator.**
+Yes, for sure.  But only thing you need to do is mention me as a code creator.
 
 
 
