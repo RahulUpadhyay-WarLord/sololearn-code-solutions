@@ -20,13 +20,9 @@
 
 ### Which programming languages do you use here?
 
-<<<<<<< HEAD
 
 
 
-
-=======
->>>>>>> c225699eaa93b317760005a4ca04f5a5de4a618a
 **C, C++, Python**
 
 *As soon as I will learn new language basics, I will add new language solutions.*
