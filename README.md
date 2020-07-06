@@ -39,7 +39,7 @@ C, C++, and Python
 
 
 
-Yes, for sure.  But only thing you need to do is mention me as a code creator.
+Read the license for that information.
 
 
 
