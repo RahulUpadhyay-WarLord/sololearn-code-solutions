@@ -29,31 +29,42 @@ So there is no problem with input and output
 
 `+>>>,`
 
+
 `[-[->+>]<<]<[>>]>>`
+
 
 ###### Then you can see modified divide by 2 function (divide by 3)
 
 It is all just previous function but with one line changed
 
 `[`
+
 	`-`
+	
 	`[`
+	
 		`-`
+		
 		`[->+>] 		#This line changed`
+		
 	`]`
+	
 	`<<`
+	
 `]`
 
 ###### And then we will move to the result slot
 If a%3==0 we will be near the result slot(p is a pointer):
 
 0 res
+
 p
 
 and if a%3!=0 we will be 3 slots away from res:
 
 
 0 0 0 res
+
 p
 
 
