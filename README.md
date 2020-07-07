@@ -25,7 +25,7 @@ add missing codes soon.
 
 
 
-C, C++, and Python
+C, C++, Python and  ̶**B̶R̶A̶I̶N̶F̶U̶C̶K̶**
 
 *As soon as I will learn new language basics, I will add new language solutions.*
 
