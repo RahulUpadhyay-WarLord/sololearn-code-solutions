@@ -4,17 +4,13 @@
 
 
 
-
-
 This is archive with all Sololearn problems solutions, including community puzzles, sorted by languages and difficulty.
-
 
 *All solutions passed official Sololearn tests. If you want, you can visit my Sololearn account:* https://www.sololearn.com/Profile/10924598
 
 
-This repository is not completed yet, so it is normal if you will not find some tasks here. I will
 
-add missing codes soon.
+#### Edit : all Code Coach solutions completed on 3 languages!
 
 
 
