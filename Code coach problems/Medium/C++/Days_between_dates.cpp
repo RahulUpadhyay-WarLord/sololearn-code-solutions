@@ -14,25 +14,25 @@ int main()
 		cin >> date;
 		if(date == "January")
 			month[i] = 1;
-		else if(date  == "February")
+		else if(date == "February")
 			month[i] = 2;
-		else if(date  == "March")
+		else if(date == "March")
 			month[i] = 3;
-		else if(date  == "April")
+		else if(date == "April")
 			month[i] = 4;
-		else if(date  == "May")
+		else if(date == "May")
 			month[i] = 5;
-		else if(date  == "June")
+		else if(date == "June")
 			month[i] = 6;
-		else if(date  == "July")
+		else if(date == "July")
 			month[i] = 7;
-		else if(date  == "August")
+		else if(date == "August")
 			month[i] = 8;
-		else if(date  == "October")
+		else if(date == "September")
 			month[i] = 9;
-		else if(date  == "November")
+		else if(date == "October")
 			month[i] = 10;
-		else if(date  == "December")
+		else if(date == "November")
 			month[i] = 11;
 		else
 			month[i] = 12;
@@ -41,7 +41,7 @@ int main()
 		while(date[j] != ',')
 		{
 			day[i] = day[i]*10 + date[j] - '0';
-			j++;	
+			j++;
 		}
 		cin >> date;
 		j = 0;
@@ -51,13 +51,13 @@ int main()
 			j++;
 		}
 	}
-	
-	
+
+
 	long long int total = 0;
-	
+
 	int d[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-	
-	
+
+
 	while(month[0] != month[1] || day[0] != day[1])
 	{
 		day[0]++;
@@ -88,9 +88,11 @@ int main()
 				day[0]=1;
 			}
 		}
-		
-		total++;	
-	}	
+
+		total++;
+	}
+
+
 	for(int i = year[0]+1; i <=year[1]; i++)
 	{
 		if(i % 4 == 0)
@@ -98,10 +100,10 @@ int main()
 		else
 			total+=365;
 	}
-	
-	
+
+
 	cout << total << endl;
-	
-	
-	return 0;	
+
+
+	return 0;
 }
