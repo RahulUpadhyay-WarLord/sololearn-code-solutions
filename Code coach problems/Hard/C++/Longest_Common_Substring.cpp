@@ -1,42 +1,60 @@
-/*
-Test solution, passed 5/6 Sololearn tests
-*/
-
-
+// SoloLearn Learning LearningIsFun Learnable
 
 #include <iostream>
 #include <string>
 #include <vector>
-
-#define SCI static_cast<int>
+#include <algorithm>
 using namespace std;
-
 int main()
 {
-	string buf;
-	getline(cin, buf);
+	string line;
+	getline(cin, line);
 	
-	vector <string> w;
 	
-	for(int i = 0; i < SCI(buf.size()); i++)
+	vector <string> words;
+	
+	for(int i = 0; i < line.size(); i++)
 	{
-		if(buf[i] == ' ')
+		if(line[i] == ' ')
 		{
-			w.push_back(buf.substr(0, i));
-			buf.erase(0, i+1);
+			words.push_back(line.substr(0, i));
+			line.erase(0, i+1);
 			i = 0;
 		}
-		else if(i == SCI(buf.size()) - 1)
-			w.push_back(buf);
 	}
 	
-	
-	string max = "";
-	
+	words.push_back(line);
 	
 	
+	string res = "";
 	
 	
 	
-	return 0;
+	for(int i = 1; i <= words[0].size(); i++)
+	{
+		for(int j = 0; j < words[0].size(); j++)
+		{
+			string check = words[0].substr(j, i);
+			int l;
+			for(l = 0; l < words.size(); l++)
+			{
+				if(words[l].find(check) == string::npos)
+					break;
+			}
+			if(l == words.size())
+			{
+				if(check.size() > res.size())
+					res = check;
+				else if(check.size() == res.size())
+					res = min({check, res});
+			}
+		}
+	}
+	
+	cout << res;
+		
+	
+	
+	
+	
 }
