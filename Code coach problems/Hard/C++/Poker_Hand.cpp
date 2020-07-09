@@ -68,9 +68,6 @@ int main()
 	bool flush=0;
 	bool straight = 0;
 	
-	if(values[0] < values[1] && values[1] < values[2] && values[2] < values[3] && values[3] < values[4])
-		straight = 1;
-	
 	if(suits[0] == suits[1] && suits[1] == suits[2] && suits[2] == suits[3] && suits[3] == suits[4])
 		flush = 1;
 		
@@ -101,6 +98,9 @@ int main()
 	sort(repeats.begin(), repeats.end());
 	
 	sort(values.begin(), values.end());
+	
+	if(values[0] == values[1]-1 && values[1] == values[2]-1 && values[2] == values[3]-1 && values[3] == values[4]-1)
+		straight = 1;
 	
 	
 	if(repeats.size()== 1 && repeats[0] == 2)
