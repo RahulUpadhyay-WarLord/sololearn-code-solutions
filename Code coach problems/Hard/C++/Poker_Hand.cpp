@@ -110,7 +110,7 @@ int main()
 		res = "Two Pairs";
 		
 	if(repeats.size() == 1 && repeats[0] == 3)
-		res = "Three of a kind";
+		res = "Three of a Kind";
 	if(straight == 1)
 		res = "Straight";
 	
