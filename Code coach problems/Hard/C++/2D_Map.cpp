@@ -25,30 +25,13 @@ int main()
 				y2 = y;
 			}
 		}
-		else if(a[i] == ',')
+		x++;
+		if(a[i] == ',')
 		{
 			x = 0;
 			y++;
 		}
-		else
-			x++;
 	}
-	
-	int t = 0;
-	
-	if(y1 != y2)
-		t += (y2-y1)/2+1;
-	else
-		t += y1;
-	
-	
-	if(x1 != x2)
-		t += (x2-x1)/2+1;
-	else
-		t += x1;
-		
-	cout << t;
-	
-	
-	return 0;
+
+	cout << abs(x2-x1) + abs(y2-y1);
 }
