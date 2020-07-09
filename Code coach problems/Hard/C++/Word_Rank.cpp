@@ -1,8 +1,3 @@
-/*
- * Test code, 5/6 tests passed
-*/
-
-
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -23,15 +18,23 @@ int main()
 	
 	vector <int> s = n;
 	sort(s.begin(), s.end());
-	
-	int count = 1;
+	vector <vector<int>> perms;
 	do
 	{
-		count++;
+		perms.push_back(s);
 	}
-	while(next_permutation(s.begin(), s.end()) && s != n);
+	while(next_permutation(s.begin(), s.end()));
 	
-	cout << count;
+	for(int i = 0; i < perms.size(); i++)
+	{
+		if(perms[i] == n)
+		{
+			cout << i+1;
+			return 0;
+		}
+	}
+	
+	
 	
 	
 	
