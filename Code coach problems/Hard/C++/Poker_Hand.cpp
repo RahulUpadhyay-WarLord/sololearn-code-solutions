@@ -1,5 +1,5 @@
 /*
- * Test solution, passed 4/8 tests
+ * Test solution, passed 5/8 tests
 */
 
 
@@ -12,7 +12,7 @@ int main()
 {
 	string a;
 	getline(cin, a);
-	string res = "";
+	string res = "High Card";
 	int resVal = 1;
 	vector <string> c;
 	for(int i = 0; i < a.size(); i++)
@@ -66,6 +66,10 @@ int main()
 	}
 	
 	bool flush=0;
+	bool straight = 0;
+	
+	if(values[0] < values[1] && values[1] < values[2] && values[2] < values[3] && values[3] < values[4])
+		straight = 1;
 	
 	if(suits[0] == suits[1] && suits[1] == suits[2] && suits[2] == suits[3] && suits[3] == suits[4])
 		flush = 1;
@@ -99,12 +103,7 @@ int main()
 	sort(values.begin(), values.end());
 	
 	
-	
-	
-	if(values[values.size()-1] == 14)
-		res = "High Card";
-	
-	if(repeats.size()==1 && repeats[0] == 1)
+	if(repeats.size()== 1 && repeats[0] == 2)
 		res = "One Pair";
 	
 	if(repeats.size() == 2 && repeats[0] == 2 && repeats[1] == 2)
@@ -112,8 +111,7 @@ int main()
 		
 	if(repeats.size() == 1 && repeats[0] == 3)
 		res = "Three of a kind";
-		
-	if(repeats.size() == 0)
+	if(straight == 1)
 		res = "Straight";
 	
 	if(flush == true)
@@ -125,7 +123,7 @@ int main()
 	if(repeats.size() == 1 && repeats[0] == 4)
 		res = "Four of a Kind";
 	
-	if(repeats.size() == 0 && flush == true)
+	if(straight == 1 && flush == true)
 		res = "Straight Flush";
 	
 	if(values[0] == 10 && values[1] == 11 && values[2] == 12 && values[3] == 13 && values[4] == 14 && flush == true)
