@@ -10,9 +10,6 @@ This is archive with all Sololearn problems solutions, including community puzzl
 
 
 
-#### Edit : all Code Coach solutions completed on 3 languages!
-
-
 
 
 
