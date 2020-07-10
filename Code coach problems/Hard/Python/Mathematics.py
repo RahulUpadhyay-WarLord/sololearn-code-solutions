@@ -1,32 +1,39 @@
-''' Test code, not working ''' 
-op = "+-*/"
+import sys
+
+"""
+Test:
+15
+(1+2+3+4) (158*17) (2/1*58/3) (2*15/30+15)
+"""
+
+ops = "+-/*"
 n = int(input())
-a = input().split()
-nums = []
-ops = []
-for i in range(len(a)):
-	c = 0
-	j = 0
-	while j < len(a[i]):
-		if a[i][j] in ops:
-			num.append(int(a[i][:j]))
-			ops.append(a[i][j])
-			a[i] = a[i][j+1:]
-			j = 0
-	t = nums[0]
-	for l in range(len(ops))
-		if ops[l] == '+':
-			t += nums[l+1]
-		elif ops[l] == '-':
-			t -= nums[l+1]
-		elif ops[l] == '*':
-			t *= nums[l+1]
-		else:
-			t /= nums[l+1]
-		if t == n:
-			print("index " + str(i))
-			sys.exit()
-	nums.clear()
-	ops.clear()
+s = input().split()
+for i in range(len(s)):
+    s[i] = s[i][1:-1]
+    op = []
+    nums = []
+    j = 0
+    while j < len(s[i]):
+        if s[i][j] in ops:
+            op.append(s[i][j])
+            nums.append(int(s[i][:j]))
+            s[i] = s[i][j + 1:]
+            j = 0
+        j += 1
+    nums.append(int(s[i]))
+    t = nums[0]
+    for j in range(len(op)):
+        if op[j] == '+':
+            t += nums[j + 1]
+        elif op[j] == '-':
+            t -= nums[j + 1]
+        elif op[j] == '*':
+            t *= nums[j + 1]
+        else:
+            t /= nums[j + 1]
+
+    if t == n:
+        print("index " + str(i))
+        sys.exit()
 print("none")
-	
