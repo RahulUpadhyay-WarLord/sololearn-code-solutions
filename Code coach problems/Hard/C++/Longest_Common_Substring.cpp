@@ -1,5 +1,3 @@
-// SoloLearn Learning LearningIsFun Learnable
-
 #include <iostream>
 #include <string>
 #include <vector>
