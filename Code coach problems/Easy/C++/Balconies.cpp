@@ -1,5 +1,5 @@
 /*
- * Balconies Solilearn task solution
+ * Balconies Sololearn task solution
  * Djivs, 2020
 */
 #include <iostream>
@@ -7,9 +7,9 @@
 using namespace std;
 int main()
 {
-        //array with apartments areas
+        //Array with apartments areas
 	int areas[2] = {0, 0};
-        //string to input data about apartments
+        //String to input data about apartments
 	string buf;
         //Then, 2 times(for apartmant A and B):
 	for(int i = 0; i < 2; i++)
