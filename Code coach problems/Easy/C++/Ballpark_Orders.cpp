@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
+//function to calculate cost for given string
+
 short int cost(string s)
 {
 	if(s == "Pizza" || s == "Nachos")
@@ -9,13 +12,18 @@ short int cost(string s)
 		return 10;
 	else if(s == "Water")
 		return 4;
+
 	return 5;
 }
+//Main function
+
 int main()
 {
 	string a;
 	int total = 0;
+
 	getline(cin, a);
+
 	for(int i = 0; i < a.size(); i++)
 	{
 		if(a[i] == ' ')
@@ -29,6 +37,6 @@ int main()
 		else if(i == a.size()-1)
 			total+=cost(a);
 	}
-	cout << (float)(total*1.07);
+	cout << static_cast<float>(total*1.07);
 	return 0;
 }
